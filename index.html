@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon.jpg">
+    <title>Clickable Emojis</title>
+</head>
+<body>
+    <div id="startOverlay">
+        <h2>Welcome to the Emoji Game</h2>
+        <p>Click the emoji with a red box around it to earn points.</p>
+        <p>Earn as many points as you can in 20 seconds.</p>
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <div id="endOverlay">
+        <h2 id="endTitle"></h2>
+        <p id="showScore"></p>
+        <button id="replayButton">Replay</button>
+        <button id="shopButton">Shop</button>
+        <button id="displayButton">Display</button>
+    </div>
+
+    <div id="shopOverlay">
+        <div class="emoji-slide">
+            <p class="shopEmoji" id="emoji1"></p>
+            <p class="price" id="emojiPrice1"></p>
+            <button id="buyButton">Buy</button>
+        </div>
+        <!-- Navigation Buttons -->
+        <button class="prev" id="prevButton">Previous</button>
+        <button class="next" id="nextButton">Next</button>
+    </div>
+
+    <div id="displayOverlay">
+        <div id="ownedOverlay">
+            <span id="closeButton" class="close-button">×</span>
+            <p id="emojiOwned"></p>
+            <button id="prev2">Previous</button>
+            <button id="useButton">Swap</button>
+            <button id="next2">Next</button>
+        </div>
+    </div>
+
+    <div class="top-bar" id="top-bar">
+        <div class="item1" id="item1Bar1">20:00</div>
+        <div class="item2" id="item2Bar1">Points: 0</div>
+    </div>
+
+    <div class="emoji-container" id="container"></div>
+<script src="script.js"></script>
+</body>
+</html>
